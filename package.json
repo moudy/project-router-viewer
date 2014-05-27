@@ -1,6 +1,6 @@
 {
   "name": "project-router-viewer",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "View routes defined by Project Router",
   "main": "index.js",
   "scripts": {

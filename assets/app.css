@@ -1,0 +1,30 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+table {
+  max-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+
+.verb {
+  width: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #999;
+}
+
+td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+th {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: bottom;
+}

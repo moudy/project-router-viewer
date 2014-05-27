@@ -15,7 +15,7 @@ module.exports = function (router) {
   app.get('/', function (req, res) {
     res.render('index', {
       routes: routes
-    , namespace: req.originalUrl
+    , namespace: req.originalUrl.replace(/\/$/,'')
     });
   });
 
