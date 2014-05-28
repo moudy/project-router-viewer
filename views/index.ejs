@@ -7,26 +7,37 @@
     <link href="<%= namespace %>/assets/app.css" rel="stylesheet">
   </head>
   <body>
-    <table>
-      <thead>
-        <tr>
-          <th>Path</th>
-          <th>Route</th>
-          <th>Resource</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% routes.forEach(function(route){ %>
+    <div class='wrap'>
+      <table>
+        <thead>
           <tr>
-            <td>
-              <span class='verb'><%= route.method %></span>
-              <%= route.path %>
-            </td>
-            <td><%= route.templatePath %></td>
-            <td><%= route.resourceName || '' %></td>
+            <th></th>
+            <th>Path</th>
+            <th>Route</th>
+            <th>Resource</th>
           </tr>
-        <% }) %>
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          <% routes.forEach(function(route){ %>
+            <tr>
+              <td class='verb'>
+                <%= route.method %>
+              </td>
+              <td>
+                <%= route.path %>
+              </td>
+              <td><%= route.templatePath %></td>
+              <td>
+                <% if (route.resourceName) { %>
+                  <span class='resource'>
+                    <%= route.resourceName %>
+                  </span>
+                <% } %>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>
