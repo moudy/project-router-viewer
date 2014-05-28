@@ -4,7 +4,8 @@
   "description": "View routes defined by Project Router",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "./scripts/build"
   },
   "keywords": [
     "project-router",
@@ -15,5 +16,8 @@
   "dependencies": {
     "ejs": "^1.0.0",
     "express": "^4.3.1"
+  },
+  "devDependencies": {
+    "clean-css": "^2.1.8"
   }
 }

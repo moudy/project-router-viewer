@@ -1,0 +1,5 @@
+#1/usr/bin/env sh
+
+mkdir -p ./tmp
+mv ./assets/app.css ./tmp/app.css
+node_modules/.bin/cleancss -o assets/app.css tmp/app.css
