@@ -8,15 +8,16 @@
   </head>
   <body>
     <div class='wrap'>
+      <header>
+        <%= counts.total %> Route<% if (counts.total !== 1) { %>s<% } %>
+
+        <span class='verb'><%= counts.get %> get</span>
+        <span class='verb'><%= counts.post %> post</span>
+        <span class='verb'><%= counts.put %> put</span>
+        <span class='verb'><%= counts.delete %> delete</span>
+
+      </header>
       <table>
-        <thead>
-          <tr>
-            <th></th>
-            <th>Path</th>
-            <th>Route</th>
-            <th>Resource</th>
-          </tr>
-        </thead>
         <tbody>
           <% routes.forEach(function(route){ %>
             <tr>

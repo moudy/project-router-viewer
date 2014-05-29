@@ -10,13 +10,11 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 module.exports = function (router) {
-  var routes = serializeRoutes(router);
+  var data = serializeRoutes(router);
 
   app.get('/', function (req, res) {
-    res.render('index', {
-      routes: routes
-    , namespace: req.originalUrl.replace(/\/$/,'')
-    });
+    data.namespace = req.originalUrl.replace(/\/$/,'');
+    res.render('index', data);
   });
 
   return app;
