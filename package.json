@@ -1,6 +1,6 @@
 {
   "name": "project-router-viewer",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "View routes defined by Project Router",
   "repository": "git@github.com:moudy/project-router-viewer.git",
   "main": "index.js",
