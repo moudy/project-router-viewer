@@ -8,7 +8,7 @@ See a list of route mappings for [Project Router](https://github.com/moudy/proje
 
 ### Install
 ```
-npm install --save project-router-viewer
+npm install --save-dev project-router-viewer
 ```
 
 ### Setup
