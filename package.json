@@ -2,6 +2,7 @@
   "name": "project-router-viewer",
   "version": "0.0.1",
   "description": "View routes defined by Project Router",
+  "repository": "git@github.com:moudy/project-router-viewer.git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
