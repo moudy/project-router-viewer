@@ -1,5 +1,7 @@
 ## Project Router Viewer
 
+[![Build Status](https://travis-ci.org/moudy/project-router-viewer.svg)](https://travis-ci.org/moudy/project-router-viewer)
+
 See a list of route mappings for [Project Router](https://github.com/moudy/project-router).
 
 ![Project Router Viewer Screenshot](https://raw.githubusercontent.com/moudy/project-router-viewer/screenshot/screenshot.png)
